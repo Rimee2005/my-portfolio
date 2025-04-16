@@ -3,9 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // 👉 added
-import Project1 from '../assets/Project1.png';
+import Project1 from "../assets/Project1.png";
 import { image } from "framer-motion/client";
-
 
 function Projects() {
   useEffect(() => {
@@ -76,7 +75,9 @@ function Projects() {
       style={{ backgroundColor: "#0d1117", color: "#e6edf3" }}
     >
       <div className="text-center mb-5">
-        <h2 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>🚀 My Projects</h2>
+        <h2 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+          🚀 My Projects
+        </h2>
         <p style={{ color: "#a1a1aa" }}>
           Here are a few cool things I've built recently.
         </p>
@@ -102,12 +103,16 @@ function Projects() {
                   className="card"
                   style={{
                     width: "100%",
-                    maxWidth: "350px",
+                    maxWidth: "250px",
                     backgroundColor: "#161b22",
                     border: "none",
                     borderRadius: "12px",
                     boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
                     transition: "transform 0.3s ease",
+                    overflow: "hidden",
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "220px",
                   }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.transform = "scale(1.05)")
@@ -123,22 +128,41 @@ function Projects() {
                     style={{
                       borderTopLeftRadius: "12px",
                       borderTopRightRadius: "12px",
+                      height: "170px", // more space for image
+                      objectFit: "cover",
                     }}
                   />
-                  <div className="card-body text-center">
-                    <h5 className="card-title" style={{ color: "#38bdf8" }}>
+                  <div
+                    className="card-body text-center p-2"
+                    style={{ flexGrow: 1 }}
+                  >
+                    <h5
+                      className="card-title"
+                      style={{
+                        color: "#38bdf8",
+                        fontSize: "1rem",
+                        marginBottom: "0.25rem",
+                      }}
+                    >
                       {proj.title}
                     </h5>
-                    <p className="card-text" style={{ color: "#cbd5e1" }}>
+                    <p
+                      className="card-text"
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: "0.85rem",
+                        marginBottom: "0.5rem",
+                      }}
+                    >
                       {proj.description}
                     </p>
                     <a
                       href={proj.link}
-                      className="btn btn-outline-info"
+                      className="btn btn-sm btn-outline-info"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View on GitHub
+                      GitHub 🔗
                     </a>
                   </div>
                 </div>

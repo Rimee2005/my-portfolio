@@ -27,26 +27,45 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul className="navbar-nav gap-4">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul className="navbar-nav gap-4 text-center">
           <li className="nav-item">
-            <a className="nav-link text-light d-flex align-items-center gap-2" href="#home">
-              <FaHome /> <span className="d-none d-md-inline">Home</span>
+            <a
+              className="nav-link text-light d-flex flex-column align-items-center"
+              href="#home"
+            >
+              <FaHome size={20} />
+              <span style={{ fontSize: "0.75rem" }}>Home</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-light d-flex align-items-center gap-2" href="#projects">
-              <FaLaptopCode /> <span className="d-none d-md-inline">Projects</span>
+            <a
+              className="nav-link text-light d-flex flex-column align-items-center"
+              href="#projects"
+            >
+              <FaLaptopCode size={20} />
+              <span style={{ fontSize: "0.75rem" }}>Projects</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-light d-flex align-items-center gap-2" href="#skills">
-              <FaTools /> <span className="d-none d-md-inline">Skills</span>
+            <a
+              className="nav-link text-light d-flex flex-column align-items-center"
+              href="#skills"
+            >
+              <FaTools size={20} />
+              <span style={{ fontSize: "0.75rem" }}>Skills</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-light d-flex align-items-center gap-2" href="#contact">
-              <FaEnvelope /> <span className="d-none d-md-inline">Contact</span>
+            <a
+              className="nav-link text-light d-flex flex-column align-items-center"
+              href="#contact"
+            >
+              <FaEnvelope size={20} />
+              <span style={{ fontSize: "0.75rem" }}>Contact</span>
             </a>
           </li>
         </ul>

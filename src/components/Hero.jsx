@@ -29,6 +29,7 @@ function Hero() {
             fontSize: "3rem",
             fontWeight: "bold",
             color: "#58a6ff",
+            marginLeft:"2rem",
           }}
         >
           Hi, I'm Rimjhim 👩‍💻
@@ -39,6 +40,7 @@ function Hero() {
             color: "#8b949e",
             marginTop: "1rem",
             lineHeight: "1.6",
+            marginLeft:"2rem",
           }}
         >
           I build beautiful and functional <strong>web applications</strong> with clean UI and smooth user experience.
@@ -51,6 +53,7 @@ function Hero() {
             color: "#c9d1d9",
             opacity: 0.8,
             fontStyle: "italic",
+            marginLeft:"2rem",
           }}
           data-aos="fade-up"
           data-aos-delay="300"

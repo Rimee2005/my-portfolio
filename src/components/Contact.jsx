@@ -1,12 +1,40 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:5000/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      alert(data.message);
+      setFormData({ name: "", email: "", message: "" });
+    } catch (err) {
+      alert("Something went wrong!");
+    }
+  };
 
   return (
     <section
@@ -20,23 +48,23 @@ function Contact() {
       <h2 className="mb-3 fw-bold text-info" data-aos="fade-up">
         Contact Me
       </h2>
-      <p className="mb-4" data-aos="fade-up" data-aos-delay="100"
-            style={{
-              color:"white",
-            }}>
 
+      <p
+        className="mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        style={{ color: "white" }}
+      >
         Feel free to reach out!
       </p>
 
+      {/* Contact Links */}
       <div
-        className="d-flex justify-content-center gap-4 flex-wrap"
+        className="d-flex justify-content-center gap-4 flex-wrap mb-5"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <a
-          className="contact-link"
-          href="mailto:rimjhimjha961@gmail.com"
-        >
+        <a className="contact-link" href="mailto:rimjhimjha961@gmail.com">
           Email
         </a>
         <a
@@ -55,6 +83,61 @@ function Contact() {
         >
           GitHub
         </a>
+      </div>
+
+      {/* Contact Form */}
+      <div className="container" data-aos="fade-up" data-aos-delay="300">
+        <form
+          onSubmit={handleSubmit}
+          className="mx-auto"
+          style={{
+            maxWidth: "600px",
+            background: "#161b22",
+            padding: "2rem",
+            borderRadius: "1rem",
+            boxShadow: "0 0 15px rgba(56, 189, 248, 0.1)",
+          }}
+        >
+          <div className="mb-3 text-start">
+            <label className="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              className="form-control bg-dark text-white border-info"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="mb-3 text-start">
+            <label className="form-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              className="form-control bg-dark text-white border-info"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="mb-3 text-start">
+            <label className="form-label">Message</label>
+            <textarea
+              name="message"
+              rows="4"
+              className="form-control bg-dark text-white border-info"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" className="btn btn-info text-black fw-bold px-4">
+            Send Message
+          </button>
+        </form>
       </div>
 
       <style>{`

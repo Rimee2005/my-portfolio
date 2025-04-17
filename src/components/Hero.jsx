@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   useEffect(() => {
@@ -20,16 +21,13 @@ function Hero() {
         overflow: "hidden",
       }}
     >
-      <div
-        className="col-12 col-md-6 mb-4 mb-md-0"
-        data-aos="fade-right"
-      >
+      <div className="col-12 col-md-6 mb-4 mb-md-0" data-aos="fade-right">
         <h1
           style={{
             fontSize: "3rem",
             fontWeight: "bold",
             color: "#58a6ff",
-            marginLeft:"2rem",
+            marginLeft: "2rem",
           }}
         >
           Hi, I'm Rimjhim 👩‍💻
@@ -40,10 +38,11 @@ function Hero() {
             color: "#8b949e",
             marginTop: "1rem",
             lineHeight: "1.6",
-            marginLeft:"2rem",
+            marginLeft: "2rem",
           }}
         >
-          I build beautiful and functional <strong>web applications</strong> with clean UI and smooth user experience.
+          I build beautiful and functional <strong>web applications</strong>{" "}
+          with clean UI and smooth user experience.
         </p>
 
         <p
@@ -53,13 +52,27 @@ function Hero() {
             color: "#c9d1d9",
             opacity: 0.8,
             fontStyle: "italic",
-            marginLeft:"2rem",
+            marginLeft: "2rem",
           }}
           data-aos="fade-up"
           data-aos-delay="300"
         >
           Let's turn ideas into reality ✨
         </p>
+        <a
+          href="/Rimjhim.pdf"
+          download
+          className="btn btn-outline-info align-items-center gap-1 fw-semibold"
+          style={{
+            fontSize: "1.5rem",      
+            marginLeft:"30px",
+            padding: "6px 10px",      
+            borderRadius: "8px",  
+            transition: "transform 0.5s ease",    
+          }}
+        >
+          <FaDownload size={20} /> Resume
+        </a>
       </div>
 
       <div

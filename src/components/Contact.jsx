@@ -10,6 +10,8 @@ function Contact() {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -20,6 +22,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await fetch("http://localhost:5000/send", {
@@ -33,6 +36,8 @@ function Contact() {
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
       alert("Something went wrong!");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -98,7 +103,7 @@ function Contact() {
             boxShadow: "0 0 15px rgba(56, 189, 248, 0.1)",
           }}
         >
-          <div className="mb-3 text-start">
+          <div className="mb-3 text-start" data-aos="fade-up" data-aos-delay="100">
             <label className="form-label">Name</label>
             <input
               type="text"
@@ -110,7 +115,7 @@ function Contact() {
             />
           </div>
 
-          <div className="mb-3 text-start">
+          <div className="mb-3 text-start" data-aos="fade-up" data-aos-delay="150">
             <label className="form-label">Email</label>
             <input
               type="email"
@@ -119,10 +124,11 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
+              title="Please enter a valid email"
             />
           </div>
 
-          <div className="mb-3 text-start">
+          <div className="mb-3 text-start" data-aos="fade-up" data-aos-delay="200">
             <label className="form-label">Message</label>
             <textarea
               name="message"
@@ -134,8 +140,12 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button type="submit" className="btn btn-info text-black fw-bold px-4">
-            Send Message
+          <button
+            type="submit"
+            className="btn btn-info text-black fw-bold px-4"
+            disabled={loading}
+          >
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

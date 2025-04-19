@@ -10,9 +10,10 @@ import node from "../assets/node.png"
 import express from "../assets/express.png"
 import git from "../assets/git.png"
 import github from "../assets/github.png"
+import react from "../assets/react.png"
 
 function Skills() {
-  const skills = [html, css, js, node , express, mongo , git , github];
+  const skills = [html, css, js, react,  node , express, mongo , git , github];
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -26,6 +27,7 @@ function Skills() {
         backgroundColor: "#0d1117",
         color: "#e6edf3",
         width: "1280px",
+       
       }}
     >
       <h2 className="mb-5 fw-bold text-info" data-aos="fade-up">

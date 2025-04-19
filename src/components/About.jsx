@@ -12,7 +12,10 @@ function AboutMe() {
       <section
         id="about"
         className="py-5"
-        style={{ backgroundColor:  "#0d1117", color: "#f0f6fc" }}
+        style={{ backgroundColor:  "#0d1117", color: "#f0f6fc" , 
+          zIndex: 1,
+          overflow: "vissible",
+         }}
       >
         <div className="container text-center">
           <h2 className="text-info fw-bold mb-4" data-aos="fade-up">

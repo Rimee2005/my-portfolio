@@ -15,7 +15,7 @@ function Navbar() {
       <a className="navbar-brand text-info fw-bold fs-4" href="#">
         {/* 🔥 You can pick one of these titles */}
         {/* <Coder /> by Rimjhim */}
-        Portfolio • Rimjhim
+        Rimjhim.dev
       </a>
 
       <button

@@ -4,55 +4,73 @@ import "aos/dist/aos.css";
 
 function AboutMe() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1200 });
   }, []);
 
   return (
-    <>
-      <section
-        id="about"
-        className="py-5"
-        style={{ backgroundColor:  "#0d1117", color: "#f0f6fc" , 
-          zIndex: 1,
-          overflow: "vissible",
-         }}
+    <section
+      id="about"
+      style={{
+        padding: "4rem 1rem",
+        background: "#0d1117",
+        color: "#f0f6fc",
+        fontFamily: "'Segoe UI', sans-serif",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+          textAlign: "center",
+        }}
       >
-        <div className="container text-center">
-          <h2 className="text-info fw-bold mb-4" data-aos="fade-up">
-            About Me
-          </h2>
+        <h2
+          data-aos="fade-down"
+          style={{
+            fontSize: "2.8rem",
+            fontWeight: "700",
+            marginBottom: "2rem",
+            color: "#60a5fa",
+          }}
+        >
+          About Me
+        </h2>
 
-          <div className="mx-auto" style={{ maxWidth: "700px" }} data-aos="fade-up">
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.8" }}>
-              I'm <span className="text-warning fw-semibold">Rimjhim Jha</span>, a passionate
-              frontend developer and the proud President of our college’s coding club.
-              I study at <span className="fw-medium">XYZ Engineering College</span>, where I
-              constantly dive into code, creativity, and community building.
-            </p>
+        <p
+          data-aos="fade-up"
+          style={{
+            fontSize: "1.1rem",
+            lineHeight: "1.8",
+            color: "#cbd5e1",
+            textAlign: "justify",
+          }}
+        >
+          I'm <strong style={{ color: "#38bdf8" }}>Rimjhim Jha</strong>, a passionate frontend developer and proud member of our college’s coding club.
+          I study at <strong style={{ color: "#f472b6" }}>Dr. APJ Abdul Kalam Women's Institute of Technology</strong>, currently in my <strong style={{ color: "#c084fc" }}>2nd year</strong> of B.Tech.
+          <br /><br />
+          I love crafting clean, elegant, and responsive UIs using <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>. My focus is on making web experiences beautiful, smooth, and user-friendly.
+          On the backend side, I work with <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong> to build dynamic and scalable web applications.
 
-            <p style={{ fontSize: "1.05rem", lineHeight: "1.7" }}>
-              I love building beautiful and responsive user interfaces using{" "}
-              <span className="text-info">React, Tailwind, Bootstrap</span>, and exploring
-              full-stack technologies. My goal is to turn ideas into intuitive digital
-              experiences that feel effortless to use.
-            </p>
+          <br /><br />
+          <span style={{ color: "#7dd3fc", fontWeight: "bold" }}>🛠 Tools & Tech I Use: </span>
+          Git & GitHub, REST APIs, VS Code, Netlify, Vercel
 
-            <p style={{ fontSize: "1.05rem", lineHeight: "1.7" }}>
-              From my first “Hello World” to organizing full-blown dev events, the journey
-              has been wild, inspiring, and full of curiosity. I'm always hungry to learn
-              and excited to collaborate on impactful projects.
-            </p>
+          <br /><br />
+          <span style={{ color: "#a5b4fc", fontWeight: "bold" }}>📚 Currently Learning: </span>
+           Java, Redux Toolkit, and DSA with focus on problem-solving
 
-            <p style={{ fontSize: "1.05rem", fontStyle: "italic", lineHeight: "1.7" }}>
-              Fun Fact: I might look quiet… until you mention{" "}
-              <span className="text-warning">momos, frontend bugs, or Taylor Swift lyrics!</span> 😄
-            </p>
-          </div>
-        </div>
-      </section>
+          <br /><br />
+          <span style={{ color: "#f9a8d4", fontWeight: "bold" }}>🎯 Interests: </span>
+          Full-stack projects, creative UI designs, hackathons, and coding events
 
-      <div className="custom-wave"></div>
-    </>
+          <br /><br />
+          My journey from “Hello World” to building real-world apps has been driven by creativity, curiosity, and lots of ☕. I’m always excited to collaborate and learn something new every day.
+
+          <br /><br />
+          <em style={{ color: "#facc15" }}>Fun Fact:</em> I might seem quiet… until someone mentions <strong>momos</strong>, <strong>frontend bugs</strong>, or <strong>Taylor Swift lyrics</strong> 😄🎵
+        </p>
+      </div>
+    </section>
   );
 }
 

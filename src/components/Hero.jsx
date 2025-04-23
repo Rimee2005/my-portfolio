@@ -30,7 +30,7 @@ function Hero() {
 
   return (
     <section
-      id="hero"
+      id="home"
       className="container-fluid d-flex align-items-center justify-content-start"
       style={{
         position: "relative",

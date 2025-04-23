@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaHome, FaLaptopCode, FaTools, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaLaptopCode, FaTools, FaEnvelope, FaUser } from "react-icons/fa";
+
 
 function Navbar() {
   return (
@@ -15,7 +16,7 @@ function Navbar() {
       <a className="navbar-brand text-info fw-bold fs-4" href="#">
         {/* 🔥 You can pick one of these titles */}
         {/* <Coder /> by Rimjhim */}
-        Rimjhim.dev
+        Ri.dev
       </a>
 
       <button
@@ -44,6 +45,15 @@ function Navbar() {
           <li className="nav-item">
             <a
               className="nav-link text-light d-flex flex-column align-items-center"
+              href="#about"
+            >
+              <FaUser size={20} />
+              <span style={{ fontSize: "0.75rem" }}>About</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link text-light d-flex flex-column align-items-center"
               href="#projects"
             >
               <FaLaptopCode size={20} />
@@ -56,7 +66,7 @@ function Navbar() {
               href="#skills"
             >
               <FaTools size={20} />
-              <span style={{ fontSize: "0.75rem" }}>Skills</span>
+              <span style={{ fontSize: "0.75rem" }}>Tech Stack</span>
             </a>
           </li>
           <li className="nav-item">

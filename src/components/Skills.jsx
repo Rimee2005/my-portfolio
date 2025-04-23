@@ -31,7 +31,7 @@ function Skills() {
       }}
     >
       <h2 className="mb-5 fw-bold text-info" data-aos="fade-up">
-        My Skills
+        Teck Stack
       </h2>
 
       <div className="row justify-content-center g-4">

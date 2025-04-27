@@ -80,6 +80,25 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+       {/* Custom style for mobile view */}
+       <style>
+        {`
+          @media (max-width: 991px) {
+            #navbarNav {
+              background-color: #0d1117;
+              border-radius: 12px;
+              padding: 1rem;
+              margin-top: 1rem;
+              box-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
+            }
+            .navbar-nav {
+              flex-direction: column !important;
+              align-items: center;
+            }
+          }
+        `}
+      </style>
     </nav>
   );
 }

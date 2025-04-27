@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import App from "../App";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Fade = () => {
   const [currentText, setCurrentText] = useState("first"); // 'first' | 'second' | 'app'

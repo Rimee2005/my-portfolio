@@ -6,14 +6,14 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import mongo from "../assets/mongo.png";
 import js from "../assets/js.png";
-import node from "../assets/node.png"
-import express from "../assets/express.png"
-import git from "../assets/git.png"
-import github from "../assets/github.png"
-import react from "../assets/react.png"
+import node from "../assets/node.png";
+import express from "../assets/express.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import react from "../assets/react.png";
 
 function Skills() {
-  const skills = [html, css, js, react,  node , express, mongo , git , github];
+  const skills = [html, css, js, react, node, express, mongo, git, github];
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -26,18 +26,16 @@ function Skills() {
       style={{
         backgroundColor: "#0d1117",
         color: "#e6edf3",
-        width: "1280px",
-       
       }}
     >
       <h2 className="mb-5 fw-bold text-info" data-aos="fade-up">
-        Teck Stack
+        Tech Stack
       </h2>
 
       <div className="row justify-content-center g-4">
         {skills.map((src, idx) => (
           <div
-            className="col-4 col-md-2 d-flex justify-content-center"
+            className="col-4 col-sm-3 col-md-2 d-flex justify-content-center"
             key={idx}
             data-aos="zoom-in"
             data-aos-delay={idx * 100}

@@ -30,7 +30,7 @@ function Projects() {
       title: "🏡 Airbnb Clone",
       description: "A travel website with listings, booking system and property management.",
       techStack: "HTML, CSS, JavaScript, Node.js, Express.js, MongoDB",
-      link: "https://github.com/Rimee2005/Project1",
+      link: "https://github.com/Rimee2005/Wanderlust",
       image: Project1,
     },
     {

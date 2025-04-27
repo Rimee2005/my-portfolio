@@ -83,7 +83,7 @@ function Hero() {
             marginLeft: "2rem",
           }}
         >
-          Hi, I'm Rimjhim 👩‍💻
+          Hi, I'm Rimjhim 
         </h1>
 
         <div

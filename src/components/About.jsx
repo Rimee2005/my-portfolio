@@ -48,8 +48,9 @@ function AboutMe() {
           I'm <strong style={{ color: "#38bdf8" }}>Rimjhim Jha</strong>, a passionate frontend developer and proud member of our college’s coding club.
           I study at <strong style={{ color: "#f472b6" }}>Dr. APJ Abdul Kalam Women's Institute of Technology</strong>, currently in my <strong style={{ color: "#c084fc" }}>2nd year</strong> of B.Tech.
           <br /><br />
-          I love crafting clean, elegant, and responsive UIs using <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>. My focus is on making web experiences beautiful, smooth, and user-friendly.
-          On the backend side, I work with <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong> to build dynamic and scalable web applications.
+          I love crafting clean, elegant, and responsive UIs using <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>. My focus is on making web experiences beautiful, smooth, , user-friendly
+          , and I’m also exploring backend development.
+
 
           <br /><br />
           <span style={{ color: "#7dd3fc", fontWeight: "bold" }}>🛠 Tools & Tech I Use: </span>

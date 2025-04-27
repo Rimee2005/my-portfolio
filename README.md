@@ -1,18 +1,31 @@
 # My Portfolio
 
-Welcome to my portfolio! I am Rimjhim, a passionate Frontend Developer and Web Developer. This is a showcase of my work, skills, and projects.
+Hi, I'm **Rimjhim**, a **Frontend Developer** passionate about building interactive and user-friendly websites. Welcome to my portfolio!
 
-## Table of Contents
-1. [About Me](#about-me)
-2. [Skills](#skills)
-3. [Projects](#projects)
-4. [Contact](#contact)
+## **Technologies**
+- **HTML**, **CSS**, **JavaScript**
+- **React**, **Tailwind CSS**
+- **Git**, **Node.js** (if applicable)
 
-
-- Email: [rimjhimjha961@gmail.com](mailto:rimjhimjha961@gmail.com)
-- LinkedIn: [Rimjhim's LinkedIn](https://www.linkedin.com/in/rimjhim-jha-b1b86b301/)
-- GitHub: [Rimjhim's GitHub](https://github.com/Rimee2005//my-portfolio)
-
-Feel free to connect with me if you'd like to discuss opportunities, collaborations, or just want to chat about tech!
+## **Projects**
+### 1. [Zerodha Clone](#)
+   **Technologies Used**: React, Tailwind CSS  
+   A clone of the Zerodha trading platform, built to mimic core features such as stock trading and portfolio management.  
 
 
+### 2. [Airbnb Clone](#)
+   **Technologies Used**: React, CSS  
+   A clone of Airbnb's interface with features like booking, filtering, and user reviews.  
+
+
+### 3. [College Website](#)
+   **Technologies Used**: React, Node.js, Express.js  
+   A college website built from scratch with features like a student dashboard, faculty details, and college events.  
+ 
+
+## **Contact**
+- **Email**: [rimjhimjha961@gmail.com](mailto:rimjhimjha961@gmail.com)
+- **LinkedIn**: [Rimjhim's LinkedIn](https://www.linkedin.com/in/rimjhim-jha-b1b86b301/)
+- **GitHub**: [Rimjhim's GitHub](https://github.com/Rimee2005/Wanderlust)
+
+Feel free to connect!

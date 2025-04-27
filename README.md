@@ -1,12 +1,31 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi, I'm **Rimjhim**, a **Frontend Developer** passionate about building interactive and user-friendly websites. Welcome to my portfolio!
 
-Currently, two official plugins are available:
+## **Technologies**
+- **HTML**, **CSS**, **JavaScript**
+- **React**, **Tailwind CSS**
+- **Git**, **Node.js** (if applicable)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Projects**
+### 1. [Zerodha Clone](#)
+   **Technologies Used**: React, Tailwind CSS  
+   A clone of the Zerodha trading platform, built to mimic core features such as stock trading and portfolio management.  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. [Airbnb Clone](#)
+   **Technologies Used**: React, CSS  
+   A clone of Airbnb's interface with features like booking, filtering, and user reviews.  
+
+
+### 3. [College Website](#)
+   **Technologies Used**: React, Node.js, Express.js  
+   A college website built from scratch with features like a student dashboard, faculty details, and college events.  
+ 
+
+## **Contact**
+- **Email**: [rimjhimjha961@gmail.com](mailto:rimjhimjha961@gmail.com)
+- **LinkedIn**: [Rimjhim's LinkedIn](https://www.linkedin.com/in/rimjhim-jha-b1b86b301/)
+- **GitHub**: [Rimjhim's GitHub](https://github.com/Rimee2005/Wanderlust)
+
+Feel free to connect!
